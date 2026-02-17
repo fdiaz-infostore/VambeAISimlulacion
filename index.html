@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vambe.AI | Réplica Web</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="badge">Réplica funcional para demo</div>
+    <h1>Vambe.AI <span>Simulación Web</span></h1>
+    <p>
+      Interfaz inspirada en una plataforma de IA para ventas y automatización.
+      Ejecutable directamente desde el navegador.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#demo">Probar demo</a>
+      <a class="btn btn-secondary" href="#features">Ver funcionalidades</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="features" class="features">
+      <article>
+        <h2>Embudo inteligente</h2>
+        <p>Captura, califica y prioriza leads automáticamente con reglas de negocio.</p>
+      </article>
+      <article>
+        <h2>Asistente conversacional</h2>
+        <p>Responde preguntas comunes y propone acciones comerciales en tiempo real.</p>
+      </article>
+      <article>
+        <h2>Panel de rendimiento</h2>
+        <p>Visualiza conversaciones, conversiones y productividad en una sola vista.</p>
+      </article>
+    </section>
+
+    <section id="demo" class="demo">
+      <h2>Demo de conversación</h2>
+      <div id="chat" class="chat"></div>
+      <form id="chat-form" class="chat-form">
+        <input id="chat-input" type="text" placeholder="Escribe un mensaje..." required />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Este proyecto es una simulación educativa y no representa al producto oficial.</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
