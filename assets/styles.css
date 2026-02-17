@@ -1,0 +1,102 @@
+:root {
+  --bg: #0a1020;
+  --card: #121b35;
+  --accent: #40e0d0;
+  --text: #eaf1ff;
+  --muted: #aab6d3;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(circle at 20% 20%, #152347, var(--bg));
+  color: var(--text);
+}
+
+.hero {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+.badge {
+  display: inline-block;
+  padding: .4rem .8rem;
+  border-radius: 999px;
+  background: #1f2f5e;
+  color: var(--accent);
+  font-size: .85rem;
+}
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 1rem 0 .2rem; }
+h1 span { color: var(--accent); }
+p { color: var(--muted); line-height: 1.6; }
+
+.actions { display: flex; gap: .8rem; flex-wrap: wrap; margin-top: 1.2rem; }
+.btn {
+  text-decoration: none;
+  border-radius: .7rem;
+  padding: .75rem 1.1rem;
+  font-weight: 600;
+}
+.btn-primary { background: var(--accent); color: #062632; }
+.btn-secondary { background: #233665; color: #dce6ff; }
+
+main { max-width: 960px; margin: 0 auto 2rem; padding: 0 2rem; }
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.features article {
+  background: rgba(18, 27, 53, .8);
+  border: 1px solid #2e4279;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.features h2 { font-size: 1.1rem; margin-top: 0; color: #d8e5ff; }
+
+.demo {
+  margin-top: 2rem;
+  background: rgba(18, 27, 53, .8);
+  border: 1px solid #2e4279;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.chat {
+  min-height: 220px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: .8rem;
+  padding: .7rem;
+  border-radius: .8rem;
+  background: #0f1730;
+}
+.message {
+  padding: .6rem .8rem;
+  margin: .4rem 0;
+  border-radius: .7rem;
+  width: fit-content;
+  max-width: 90%;
+}
+.message.user { margin-left: auto; background: #314f91; }
+.message.bot { background: #1f325f; }
+
+.chat-form { display: flex; gap: .5rem; }
+.chat-form input {
+  flex: 1;
+  border: 1px solid #2f4276;
+  background: #101a36;
+  color: var(--text);
+  border-radius: .6rem;
+  padding: .7rem;
+}
+.chat-form button {
+  border: 0;
+  border-radius: .6rem;
+  background: var(--accent);
+  color: #072531;
+  font-weight: 700;
+  padding: 0 1rem;
+}
+
+footer { text-align: center; color: #90a3d1; padding: 1.4rem; }
